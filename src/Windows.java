@@ -1,6 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
 
+
+
 public class Windows {
     public static void Wind() {
 
@@ -13,21 +15,19 @@ public class Windows {
         windows.setLayout(new BorderLayout());// менеджер компоновки
         windows.setLocationRelativeTo(null); //окно по центру
         windows.setVisible(true); //видимость окна
-        JButton start = new JButton("Старт");
-        JButton stop = new JButton("Выход");
+            // JButton start = new JButton("Старт");
+        //JButton stop = new JButton("Выход");
         // добавляем кнопки на панель
-        buttonsPanel.add(start);
-        buttonsPanel.add(stop);
+       // buttonsPanel.add(start);
+        // buttonsPanel.add(stop);
         // размещаем панель на Frame (верхняя часть)
-        windows.getContentPane().add(BorderLayout.NORTH, buttonsPanel);
-        windows.setVisible(true);
+
+        Draw game = new Draw();
+        windows.add(game);
+
 
     }
-    protected void Draw(Graphics graphics)
-    {
-        // int w = getWidth(); //ширина игрового поля
 
-    }
 
 
 }
