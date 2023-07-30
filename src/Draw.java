@@ -24,4 +24,26 @@ public class Draw extends JComponent {
         }
 
     }
+    void DrawX(int i, int j, Graphics graphics)
+    {
+
+        int dw = getWidth() / 3;// ширина ячейки
+        int dh = getHeight() / 3; // высота ячейки
+        graphics.setColor(Color.BLUE); // цвет сетки бирюзовый
+        int x = i * dw;
+        int y = j * dh;
+        graphics.drawLine(x,i,x+dw,y+dh); // линия от левого верхнего угла в правый ниэний
+        graphics.drawLine(x,y+dh,x+ dw, y); // линия от левого нижнего  угла в правый верхний
+    }
+    void DrawO(int i, int j, Graphics graphics)
+    {
+        int dw = getWidth() / 3;// ширина ячейки
+        int dh = getHeight() / 3; // высота ячейки
+        graphics.setColor(Color.BLUE); // цвет сетки бирюзовый
+        int x = i * dw;
+        int y = j * dh;
+        graphics.drawOval(x + 5* dw /100,y,dw*9/10,dh);
+
+
+    }
 }
