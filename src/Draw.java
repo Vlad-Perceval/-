@@ -41,7 +41,7 @@ public class Draw extends JComponent {
         int dh = getHeight() / 3; // высота ячейки
         graphics.setColor(Color.BLUE); // цвет сетки бирюзовый
         int x = i * dw;
-        int y = j * dh;
+        int y = j * dh;//s
         graphics.drawOval(x + 5* dw /100,y,dw*9/10,dh);
 
 
