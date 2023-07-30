@@ -1,15 +1,17 @@
+
+package win;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ComponentEvent;
 import java.awt.event.ComponentListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+import java.lang.*;
 
 public class Windows {
     public static void Wind() {
 
-        BackgroundPanel bgp;
+
         JFrame windows = new JFrame("Крестики нолики");//главное окно
         windows.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE); // кнопка закрывающая окно
         Dimension sSize = Toolkit.getDefaultToolkit ().getScreenSize ();// ОПРЕДЕЛЕНИЕ РАЗРЕШЕНИЯ  экрана
@@ -60,6 +62,7 @@ public class Windows {
 
 class start implements ActionListener { //обработчик событий на кнопку start
     public void actionPerformed(ActionEvent e) {
+
     }
 }
 class score implements ActionListener {//обработчик событий на кнопку score
